@@ -1,0 +1,6 @@
+/**
+
+
+.completed .todo-list .list-item.active {
+  display: none;
+}

@@ -1,0 +1,56 @@
+/**
+输入框格式
+  */
+
+i.icon-arrow-down {
+  float: left;
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+
+  cursor: pointer;
+}
+i.icon-arrow-down > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 2rem;
+  width: 2rem;
+ /*  箭头颜色 */
+  color: #3300FF;
+}
+
+input.input-box {
+  float: left;
+
+  height: 3rem;
+  width:30rem;
+  padding: 0 1rem;
+
+  font-size: 1.5rem;
+  font-weight: lighter;
+/* 输入框外观 */
+  border:1px #3300FF solid;
+  border-radius: 25px;
+
+
+
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #0066FF;/* AAA */
+  opacity: 0.5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    ##0066FF;/* AAA */
+  opacity: 0.5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    ##0066FF;/* AAA */
+  opacity: 0.5;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    ##0066FF;/* AAA */
+  opacity: 0.5;
+}

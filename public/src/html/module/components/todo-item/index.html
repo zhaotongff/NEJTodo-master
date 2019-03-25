@@ -1,0 +1,45 @@
+<!-- 写入主模块 js-flag 第二块  list-item -->
+<script src="index.js"></script>
+<meta charset="utf-8"/>
+<textarea name="txt" id="module-id-c2">
+  <div class="item-list">
+    <div class="js-flag"></div>
+    <div class="js-flag"></div>
+  </div>
+</textarea>
+<textarea name="jst" id="jst-todo-list">
+   {var num1=0,num2=0}
+  <ul class="todo-unorder-list">
+    {list beg..end as y}
+      {var x=xlist[y]}
+    {if x.type}
+    <div class="hidden">${++num1}</div>
+      <li class="list-item active" data-id="${x._id}">
+    {else}
+     <div class="hidden">${++num2}</div>
+      <li class="list-item completed" data-id="${x_id}">
+    {/if}
+        <div class="checkbox check-button" data-id="${x._id}">
+          {if x.type}
+            <input class="toggle" type="checkbox" id="todo-toggle-${y}" data-id="${x._id}"/>
+          {else}
+            <input class="toggle" type="checkbox" id="todo-toggle-${y}" data-id="${x._id}" checked/>
+          {/if}
+          <label for="todo-toggle-${y}" class="check-button"></label>
+        </div>
+        {if x.type}
+          <label class="todo-content">${x.content}</label>
+        {else}
+          <label class="todo-content completed">${x.content}</label>
+        {/if}
+        <button class="destroy" data-id="${x._id}" data-action="delete"></button>
+    </li>
+    {/list}
+  </ul>
+ <div class="num"> ${num2} 已完成/${num1+num2} 总工作量</div>
+</textarea>
+
+<!-- @TEMPLATE -->
+<textarea name="js" data-src="./index.js"></textarea>
+<textarea name="css" data-src="./index.css"></textarea>
+<!-- /@TEMPLATE -->

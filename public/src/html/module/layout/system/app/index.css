@@ -1,0 +1,165 @@
+/**主要模app块中
+  */
+.container-center-helper {
+  float: left;
+  left: 25%;
+  position: relative;
+}
+.container {
+  width: 60%;
+  min-width: 40rem;
+
+  position: relative;
+  right: 50%;
+
+  background: white;
+}
+
+.container > .j-flag:first-child {
+  height: 4rem;
+}
+/* 左上标题 */
+
+/* 左侧标题框 */
+#box-left{
+  width: 30%;
+  height:600px;
+  float:left;
+ 
+
+}
+
+ul{
+  list-style-type:none;
+  margin-left:10px;
+  padding:0;
+  overflow:hidden;
+  font-size: 20px;
+
+}
+
+li{
+
+}
+
+/* li .a, .dropbtn
+{
+  display:inline-block;
+ 
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+} */
+
+.dropdown{
+
+  color:blue;
+
+  margin-left: 0px;
+  font:500 30px/40px "simsun";
+  text-align: center;
+}
+  .dropdown1{
+ background-image: url("img/meeting.jpg");
+ background-size: 130px 40px;
+ background-repeat: no-repeat;
+}  
+   .dropdown2{
+ background-image: url("img/kouhao.jpg");
+ background-size: 130px 40px;
+ background-repeat: no-repeat;
+}  
+  .dropdown3{
+ background-image: url("img/ntesLOGO.jpg");
+ background-size: 130px 40px;
+ background-repeat: no-repeat;
+}  
+} 
+.dropdown:hover
+{
+  display:block;
+  background-color: grey;
+}
+
+.dropdown-content
+{
+  font:300 20px/30px "simsun";
+  display:none;
+   background-color: pink; 
+  /*background-color:#f9f9f9;*/
+ 
+  min-width:80px;
+  height:;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content .a
+{
+  color:black;
+  padding:9px;
+  margin: 0px;
+  height:25px;
+  text-decoration:none;
+  display:block;
+}
+
+.dropdown-content .a:hover {
+  background-color: grey;
+  
+}
+.dropdown-content .a:active{
+  color:blue;
+}
+.dropdown-content .alink{
+  text-decoration:none;
+color:red;
+}
+.dropdown:hover .dropdown-content
+{
+  display:block;
+  color:blue;
+}
+.hide{
+  display: none;
+}
+#sandTime{
+  display: inline;
+  float:left;
+  position: absolute;
+}
+#sandTime .img{
+  background-image: url("img/时间沙漏.jpg");
+ background-size: 24rem 26rem;
+ background-repeat: no-repeat;
+  width:25rem;
+  height:28rem;
+  margin-left:25px;
+ 
+  position: relative;
+
+
+}
+#sandTime article{
+  width:24rem;
+  height: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  color:#9933FF;
+   margin-left:25px;
+  font-family:"楷体";
+  display: block;
+  margin-top:-13px;
+}
+#time{
+  width:20rem;
+  height:2rem; 
+  color:#993300;
+  font-size: 1.5rem;
+   font-family: Times New Roman;
+   position: absolute;
+   top:-5rem; 
+   z-index: 1;
+   left:25px;
+
+
+}

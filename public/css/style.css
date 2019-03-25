@@ -1,0 +1,63 @@
+/**
+  全部样式布局
+
+
+  */
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: white;
+ /* background-color: rgba(200, 200, 200, 0.2);*/
+  font-size: 10px;
+}
+
+/*第一块TODO大标题  第二个框*/
+.h1-center-help {
+
+ display: block;
+ background-image: url("netease.jpg");
+ background-size: 250px 250px;
+ background-repeat: no-repeat;
+
+ 
+  float: left;
+  position: relative;
+  left: 0%; 
+}
+h1 {
+  left: 120%; 
+ position: relative;
+text-align: center;
+  color:#9933FF;
+  opacity: 0.5;
+  font-size: 8rem;
+  font-weight: lighter;
+}
+/*主要内容模块，第三个框*/
+.clearfix {
+  overflow: hidden;
+  _height: 1%;
+  margin-top:-50px;
+
+}
+input, button, select, textarea {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 0;
+}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+input[type=checkbox] {
+  visibility: hidden; /*尝试改成可见*/  
+
+}
+
